@@ -15,9 +15,6 @@ export const CartProvider = ({ children }) => {
     setItems(items.filter(addedItem => addedItem.id !== item.id));
   };
 
-  console.log("cartprovider");
-  console.log(addItem, removeItem);
-
   return (
     <CartContext.Provider
       value={{

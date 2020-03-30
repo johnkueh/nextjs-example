@@ -9,7 +9,8 @@ const CartPage = () => {
       <h1>Cart</h1>
       {items.map(item => (
         <div>
-          <div>{item.name}</div>
+          <div>{item.title}</div>
+          <div>{item.description}</div>
           <div>${item.price}</div>
           <div>
             <button
