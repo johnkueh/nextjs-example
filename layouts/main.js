@@ -1,26 +1,36 @@
 import Link from "next/link";
+import Cart from "../components/cart";
 
-const Main = ({ children }) => (
+const MainLayout = ({ children }) => (
   <div>
-    <nav
+    <div
       style={{
-        justifyContent: "space-between",
+        width: "30rem",
         display: "flex",
-        width: "10rem"
+        justifyContent: "space-between"
       }}
     >
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <Link href="/cart">
-        <a>Cart</a>
-      </Link>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </nav>
+      <nav
+        style={{
+          width: "10rem",
+          justifyContent: "space-between",
+          display: "flex"
+        }}
+      >
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+        <Link href="/cart">
+          <a>Cart</a>
+        </Link>
+        <Link href="/about">
+          <a>About</a>
+        </Link>
+      </nav>
+      <Cart />
+    </div>
     {children}
   </div>
 );
 
-export default Main;
+export default MainLayout;

@@ -1,9 +1,9 @@
 import Main from "../layouts/main";
 
-const About = () => (
+const AboutPage = () => (
   <Main>
     <h1>About</h1>
   </Main>
 );
 
-export default About;
+export default AboutPage;
